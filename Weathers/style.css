@@ -94,14 +94,17 @@
   .search-btn {
     background-color: #009ad8;
     border: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     color: white;
     position: absolute;
     right: 1px;
-    padding: 5px;
+    padding: 5.5px;
     border-radius: 5px;
     text-transform: uppercase;
+  }
+  .search-icons{
+    color: white;
   }
   /* === Forecast Boxes === */
   .days {
@@ -153,11 +156,11 @@
     outline: 0;
     border: 0;
     width: 100%;
-    color: white;
+    color: black;
     transition: 0.3s all ease-in-out;
   }
   .subscribe-form input:focus {
-    box-shadow: 0 0 15px #009ad8, 0 0 30px #009ad880;
+    box-shadow: 0 0 15px #212b2f, 0 0 30px #009ad880;
   }
   .subscribe-form button {
     position: absolute;

@@ -34,7 +34,7 @@ async function getData(cityName) {
     showError(error);
   }
 }
-getData("suez");
+getData("new delhi");
 
 function getDayName(dateStr) {
   return new Date(dateStr).toLocaleDateString("en-US", { weekday: "long" });
@@ -50,8 +50,8 @@ findCity.addEventListener("submit", function (e) {
 
 function showError(error) {
   Toastify({
-    text: `City Not Found !,${error}`,
-    duration: 3000,
+    text: `City Not Found !`,
+    duration: 4000,
     gravity: "top",
     position: "right",
     backgroundColor: "red",
@@ -83,3 +83,11 @@ function display(forecastday) {
 
   }
 }
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-item a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
